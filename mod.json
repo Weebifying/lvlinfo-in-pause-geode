@@ -1,0 +1,19 @@
+{
+	"geode": "2.0.0-beta.13",
+	"gd": {
+		"win": "2.204",
+		"android": "*"	
+	},
+	"version": "v1.0.0",
+	"id": "weebify.level_info_in_pause_menu",
+	"name": "Level Info in Pause Menu",
+	"developer": "Weebify",
+	"description": "balls",
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=1.0.0",
+			"importance": "required"
+		}
+	]
+}
