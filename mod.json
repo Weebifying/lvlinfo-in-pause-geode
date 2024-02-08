@@ -8,12 +8,17 @@
 	"id": "weebify.level_info_in_pause_menu",
 	"name": "Level Info in Pause Menu",
 	"developer": "Weebify",
-	"description": "balls",
+	"description": "Adds the level info button to the pause menu",
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
 			"version": ">=1.0.0",
 			"importance": "required"
 		}
-	]
+	],
+	"resources": {
+		"files": [
+			"./image.png"
+		]
+	}
 }
