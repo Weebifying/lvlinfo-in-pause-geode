@@ -20,5 +20,6 @@
 		"files": [
 			"./image.png"
 		]
-	}
+	},
+	"repository": "https://github.com/Weebifying/lvlinfo-in-pause-geode"
 }
