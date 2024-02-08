@@ -1,10 +1,6 @@
 #include "utils.hpp"
 
 class $modify(ModPauseLayer, PauseLayer) {
-	static void onModify(auto& self) {
-		self.setHookPriority("ModPauseLayer::customSetup", -200);
-	}
-
 	void customSetup() {
 		PauseLayer::customSetup();
 
