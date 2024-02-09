@@ -20,6 +20,15 @@ class $modify(ModPauseLayer, PauseLayer) {
 		btn->setPosition({menu->getContentSize().width/2, btn->getContentSize().height/2});
 		menu->addChild(btn);
 
+		menu->setLayout(
+			ColumnLayout::create()
+				->setGap(4.f)
+				->setAutoScale(true)
+				->setAxisAlignment(AxisAlignment::Start)
+				->setCrossAxisAlignment(AxisAlignment::Center)
+   		);
+		menu->updateLayout();
+
 	}
 
 	void onInfo(CCObject* sender) {
