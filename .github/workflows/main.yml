@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "**"
+      - "main"
 
 jobs:
   build:
@@ -36,6 +36,7 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           combine: true
+          sdk: nightly
           target: ${{ matrix.config.target }}
       
   package:
@@ -44,7 +45,7 @@ jobs:
     needs: ['build']
 
     steps:
-      - uses: geode-sdk/build-geode-mod/combine@main
+      - uses: geode-sdk/build-geode-mod@combine
         id: build
 
       - uses: actions/upload-artifact@v3
