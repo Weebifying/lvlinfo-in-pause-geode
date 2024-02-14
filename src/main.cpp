@@ -1,5 +1,7 @@
 #include "utils.hpp"
 
+FLAlertLayer* info_alert = nullptr;
+
 class $modify(ModPauseLayer, PauseLayer) {
 	void customSetup() {
 		PauseLayer::customSetup();
@@ -56,10 +58,18 @@ class $modify(ModPauseLayer, PauseLayer) {
 		if (std::string(level->m_personalBests) != "")
 			body << "\n\n<cy>Progresses:</c> " << printableProgress(level->m_personalBests, level->m_newNormalPercent2);
 
-		FLAlertLayer::create(
+		info_alert = FLAlertLayer::create(
 			level->m_levelName.c_str(),
 			body.str(),
 			"OK"
-		)->show();
+		);
+		info_alert->setID("info-alert");
+
+		info_alert->show();
+	}
+
+	void onResume(CCObject* sender) {
+		CCDirector::get()->getRunningScene()->removeChildByID("info-alert");
+		PauseLayer::onResume(sender);
 	}
 };
