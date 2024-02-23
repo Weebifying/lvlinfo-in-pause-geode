@@ -1,14 +1,15 @@
 {
-	"geode": "2.0.0-beta.19",
+	"geode": "2.0.0-beta.20",
 	"gd": {
 		"win": "2.204",
-		"android": "*"	
+		"android": "2.205"	
 	},
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"id": "weebify.level_info_in_pause_menu",
 	"name": "Level Info in Pause Menu",
 	"developer": "Weebify",
 	"description": "Adds the level info button to the pause menu",
+	"tags": ["Interface", "Utility"],
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
