@@ -1,7 +1,6 @@
 # Level Info in Pause Menu Changelog
 ## v1.0.4-beta.2
 - Updated for Geode v3.0.0-alpha.2
-- Added MacOS support
 ## v1.0.4-beta.1
 - Added 2.206 support
 ## v1.0.3
