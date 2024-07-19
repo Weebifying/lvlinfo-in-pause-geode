@@ -1,4 +1,6 @@
 # Level Info in Pause Menu Changelog
+## v1.0.5
+- Fixed image preview in mod description
 ## v1.0.4
 - Updated for Geode v3.0.0-beta.1
 - Re-added MacOS support
