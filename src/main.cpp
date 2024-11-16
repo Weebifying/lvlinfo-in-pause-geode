@@ -4,7 +4,7 @@ FLAlertLayer* info_alert = nullptr;
 
 class $modify(ModPauseLayer, PauseLayer) {
 	static void onModify(auto& self) {
-        self.setHookPriority("PauseLayer::customSetup", INT_MIN);
+        Result<> plCustomSetup = self.setHookPriority("PauseLayer::customSetup", INT_MIN);
     }
 
 	void customSetup() {
