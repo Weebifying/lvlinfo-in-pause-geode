@@ -8,7 +8,7 @@ else()
 endif()
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(LevelInfoinPauseMenu VERSION 1.1.0)
+project(LevelInfoinPauseMenu VERSION 1.1.1)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp

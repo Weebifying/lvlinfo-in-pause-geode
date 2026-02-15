@@ -1,3 +1,5 @@
+## v1.1.1
+- Updated for GD 2.2081
 ## v1.1.0
 - Updated for GD 2.2074
 ## v1.0.5
